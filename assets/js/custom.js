@@ -16,6 +16,7 @@ $(document).ready(function() {
      //     0.6 pricing table js 
      //     0.7 news-carousel js
      //     0.8 scrolltop js
+    //      0.9 Get the current year
 
      //		0.1 sticky Menu js
     $(window).scroll(function () {
@@ -117,3 +118,7 @@ $('.scrolltop').click(function () {
     }, 1000);
     return false;
 });
+
+  //-------- 0.9 Get the current year --------
+
+  document.getElementById("year").textContent = new Date().getFullYear();
